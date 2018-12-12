@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C355D1021AE9F3A007FA561 /* FurniturePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C355D0F21AE9F3A007FA561 /* FurniturePickerViewController.swift */; };
+		4C355D1521B3D852007FA561 /* Furniture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C355D1421B3D852007FA561 /* Furniture.swift */; };
 		4CBF55E9219C7701002020F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBF55E8219C7701002020F8 /* AppDelegate.swift */; };
 		4CBF55EB219C7701002020F8 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CBF55EA219C7701002020F8 /* art.scnassets */; };
-		4CBF55ED219C7701002020F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBF55EC219C7701002020F8 /* ViewController.swift */; };
+		4CBF55ED219C7701002020F8 /* FurniturePlacerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBF55EC219C7701002020F8 /* FurniturePlacerViewController.swift */; };
 		4CBF55F0219C7701002020F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBF55EE219C7701002020F8 /* Main.storyboard */; };
 		4CBF55F2219C7703002020F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CBF55F1219C7703002020F8 /* Assets.xcassets */; };
 		4CBF55F5219C7703002020F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBF55F3219C7703002020F8 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C355D0F21AE9F3A007FA561 /* FurniturePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurniturePickerViewController.swift; sourceTree = "<group>"; };
+		4C355D1421B3D852007FA561 /* Furniture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Furniture.swift; sourceTree = "<group>"; };
 		4CBF55E5219C7701002020F8 /* DesignYourRoom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignYourRoom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CBF55E8219C7701002020F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CBF55EA219C7701002020F8 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		4CBF55EC219C7701002020F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4CBF55EC219C7701002020F8 /* FurniturePlacerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurniturePlacerViewController.swift; sourceTree = "<group>"; };
 		4CBF55EF219C7701002020F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4CBF55F1219C7703002020F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CBF55F4219C7703002020F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +41,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C355D0E21AE83CA007FA561 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4CBF55EC219C7701002020F8 /* FurniturePlacerViewController.swift */,
+				4C355D0F21AE9F3A007FA561 /* FurniturePickerViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4C355D1321B3D83F007FA561 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4C355D1421B3D852007FA561 /* Furniture.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		4CBF55DC219C7701002020F8 = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +77,10 @@
 		4CBF55E7219C7701002020F8 /* DesignYourRoom */ = {
 			isa = PBXGroup;
 			children = (
+				4C355D1321B3D83F007FA561 /* Model */,
+				4C355D0E21AE83CA007FA561 /* Controller */,
 				4CBF55E8219C7701002020F8 /* AppDelegate.swift */,
 				4CBF55EA219C7701002020F8 /* art.scnassets */,
-				4CBF55EC219C7701002020F8 /* ViewController.swift */,
 				4CBF55EE219C7701002020F8 /* Main.storyboard */,
 				4CBF55F1219C7703002020F8 /* Assets.xcassets */,
 				4CBF55F3219C7703002020F8 /* LaunchScreen.storyboard */,
@@ -139,7 +161,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CBF55ED219C7701002020F8 /* ViewController.swift in Sources */,
+				4CBF55ED219C7701002020F8 /* FurniturePlacerViewController.swift in Sources */,
+				4C355D1021AE9F3A007FA561 /* FurniturePickerViewController.swift in Sources */,
+				4C355D1521B3D852007FA561 /* Furniture.swift in Sources */,
 				4CBF55E9219C7701002020F8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
